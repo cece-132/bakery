@@ -22,13 +22,15 @@ This is a practice project.  It is meant to cover CRUD functions, relationships 
 
 ## UserStories
 
-### Recipe
+### Baker
 
 ### Ingredient
 
+### Recipe
+
 ### RecipeIngredient
 
-### Baker
+
 
 
 
