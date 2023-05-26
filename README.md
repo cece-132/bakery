@@ -14,6 +14,12 @@ This is a practice project.  It is meant to cover CRUD functions, relationships 
 
 * There is very little, if any, ActiveRecord queries.  You could make up user stories to add them, such as 'What is the average oven temperature needed for cakes', 'What is the total number of ingredients needed for all of the pie recipes', etc.
 
+## Database
+
+<div align="center"> 
+  <img src="./app/assets/images/db_visual.png" alt="A visual of the database" width="574" height="374" />
+</div>
+
 ## UserStories
 
 ### Recipe
