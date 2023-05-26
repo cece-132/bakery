@@ -13,3 +13,16 @@ This is a practice project.  It is meant to cover CRUD functions, relationships 
 * If you want, you can practice migrations as well.  For example, you could add a status to the Baker table, showing whether or not the baker is a chef or sous-chef.  
 
 * There is very little, if any, ActiveRecord queries.  You could make up user stories to add them, such as 'What is the average oven temperature needed for cakes', 'What is the total number of ingredients needed for all of the pie recipes', etc.
+
+## UserStories
+
+### Recipe
+
+### Ingredient
+
+### RecipeIngredient
+
+### Baker
+
+
+
