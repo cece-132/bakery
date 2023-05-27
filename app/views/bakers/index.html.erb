@@ -2,3 +2,5 @@
 <% @bakers.each do |baker| %>
     <p> <%= link_to baker.name, baker_path(baker) %> </p>
 <% end%>
+
+<p> <%= link_to 'Create Baker', new_baker_path %> </p>
