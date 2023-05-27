@@ -21,4 +21,14 @@ RSpec.describe 'Bakers' do
     end
   end
 
+  describe 'show' do
+    it 'can be accessed from the index page' do
+      b1 = Baker.create!(name: 'Timmy')
+      visit bakers_path
+
+      click_link b1.name
+      expect(has_current_path?(baker_path(b1))).to eq true
+    end
+  end
+
 end
