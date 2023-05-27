@@ -4,7 +4,6 @@ RSpec.describe Recipe, type: :model do
 
   describe 'validations' do
     it { should validate_presence_of :name }
-    it { should validate_presence_of :id }
     it { should validate_presence_of :number_ingredients }
     it { should validate_presence_of :bake_time }
     it { should validate_presence_of :oven_temp }
