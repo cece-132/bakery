@@ -1,1 +1,5 @@
 <%= @baker.name %>
+
+<% @baker.recipes.each do |recipe|%>
+  <p> <%= recipe.name %> </p>
+<% end%>
