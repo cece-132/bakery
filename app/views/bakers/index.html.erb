@@ -1,4 +1,4 @@
 <h1>Bakers#index</h1>
 <% @bakers.each do |baker| %>
-    <p> <%= baker.name %> </p>
+    <p> <%= link_to baker.name, baker_path(baker) %> </p>
 <% end%>
