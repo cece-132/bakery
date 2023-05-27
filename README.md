@@ -35,12 +35,33 @@ This is a practice project.  It is meant to cover CRUD functions, relationships 
 
 ### Ingredient
  - Routes: 
+  - index:
+  - show:
+  - show:
+  - new:
+  - update:
+  - create:
+  - delete:
 
 ### Recipe
  - Routes: 
+  - index:
+  - show:
+  - show:
+  - new:
+  - update:
+  - create:
+  - delete:
 
 ### RecipeIngredient
  - Routes: 
+  - index:
+  - show: 
+  - show: 
+  - new:
+  - update:
+  - create:
+  - delete:
 
 
 
