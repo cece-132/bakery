@@ -1,5 +1,5 @@
 <%= @baker.name %>
 
 <% @baker.recipes.each do |recipe|%>
-  <p> <%= recipe.name %> </p>
+  <p> <%= link_to recipe.name, baker_recipe_path(@baker, recipe) %> </p>
 <% end%>

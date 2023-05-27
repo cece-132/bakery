@@ -14,11 +14,22 @@ RSpec.describe 'Baker' do
     it 'lists the recipes of the baker' do
       b1 = Baker.create!(name: 'Timmy')
       r1 = Recipe.create!(name: "Feel Better Love cake", number_ingredients: 5, bake_time: 45, oven_temp: 350, baker_id: b1.id)
+      r2 = Recipe.create!(name: "Hugs and kisses cake", number_ingredients: 10, bake_time: 45, oven_temp: 350, baker_id: b1.id)
 
       visit baker_path(b1)
-
       expect(page).to have_content("#{r1.name}")
     end
+
+    it 'links to the recipe show page' do
+      b1 = Baker.create!(name: 'Timmy')
+      r1 = Recipe.create!(name: "Feel Better Love cake", number_ingredients: 5, bake_time: 45, oven_temp: 350, baker_id: b1.id)
+      r2 = Recipe.create!(name: "Hugs and kisses cake", number_ingredients: 10, bake_time: 45, oven_temp: 350, baker_id: b1.id)
+
+      visit baker_path(b1)
+      expect(page).to have_link("#{r1.name}")
+    end
+
+    it 'sorts by name'
   end
-  
+
 end

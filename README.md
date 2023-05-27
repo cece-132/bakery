@@ -24,13 +24,23 @@ This is a practice project.  It is meant to cover CRUD functions, relationships 
 - For this program I am going to start on the outside and work my way in. The reason being that I want to start with the functionality with the least complicated tables and then start building them out and connecting them. I am going to start testing in this order, `baker`, `ingredient`, `recipe`, and `recipe_ingredient`
 
 ### Baker
- - Basic CRUD functionality and 
+ - Routes: 
+  - index: bakers_path
+  - show: baker_path
+  - show: baker_recipe_path
+  - new:
+  - update:
+  - create:
+  - delete:
 
 ### Ingredient
+ - Routes: 
 
 ### Recipe
+ - Routes: 
 
 ### RecipeIngredient
+ - Routes: 
 
 
 

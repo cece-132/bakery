@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   end
 
   resources :bakers, only: [:index, :show] do
-    resources :recipes, only: [:index]
+    resources :recipes, only: [:index, :show]
   end
 
 end
