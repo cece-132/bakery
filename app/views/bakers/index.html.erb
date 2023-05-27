@@ -1,2 +1,4 @@
 <h1>Bakers#index</h1>
-<p><%@bakers.each { |baker| baker.name }%></p>
+<p><% @bakers.each do |baker| %>
+        <%= baker.name %>
+      <% end%></p>
