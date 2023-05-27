@@ -1,5 +1,6 @@
 class Recipe < ApplicationRecord
-  validates_presence_of :name, :id
+  validates_presence_of :name, :id, :number_ingredients,
+                        :bake_time, :oven_temp, :baker_id
 
   belongs_to :baker
   has_many :recipe_ingredients
