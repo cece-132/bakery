@@ -20,9 +20,11 @@ This is a practice project.  It is meant to cover CRUD functions, relationships 
   <img src="./app/assets/images/db_visual.png" alt="A visual of the database" width="574" height="374" />
 </div>
 
-## UserStories
+## Strategy to build the program
+- For this program I am going to start on the outside and work my way in. The reason being that I want to start with the functionality with the least complicated tables and then start building them out and connecting them. I am going to start testing in this order, `baker`, `ingredient`, `recipe`, and `recipe_ingredient`
 
 ### Baker
+ - Basic CRUD functionality and 
 
 ### Ingredient
 
