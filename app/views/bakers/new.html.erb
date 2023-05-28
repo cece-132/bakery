@@ -1,8 +1,8 @@
 <h1>Bakers#new</h1>
 
 <%= form_with url: bakers_path, method: :post, local: true do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-
+  <%= f.label :name, 'Baker Name' %>
+  <%= f.text_field :name %> <br>
+  <br>
   <%= f.submit 'Submit' %>
 <% end %>

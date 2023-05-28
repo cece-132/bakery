@@ -8,15 +8,17 @@ class BakersController < ApplicationController
   end
 
   def new
+    @new_baker = Baker.new
   end
 
   def create
-    binding.pry
+    baker = Baker.new(name: params["name"])
+    if baker.save
+      redirect_to bakers_path
+    else
+      redirect_to new_baker_path
+      flash[:alert] = "Error #{error_message(baker.errors)}"
+    end
   end
 
-  private
-
-  def baker_params
-    
-  end
 end

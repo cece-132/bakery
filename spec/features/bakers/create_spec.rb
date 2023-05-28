@@ -15,12 +15,11 @@ RSpec.describe 'Baker' do
 
     it 'can create a new instance of baker' do
       total = Baker.all.count
-
       expect(total).to eq 0
 
       visit new_baker_path
 
-      fill_in :name, with: 'Toby Boy'
+      fill_in :name, with: "Toby Boy"
       click_on 'Submit'
       expect(Baker.all.count).to eq 1
     end
