@@ -28,7 +28,7 @@ This is a practice project.  It is meant to cover CRUD functions, relationships 
   - index: bakers_path
   - show: baker_path
   - show: baker_recipe_path
-  - new:
+  - new: new_baker_path
   - update:
   - create:
   - delete:

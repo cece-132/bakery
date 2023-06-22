@@ -8,7 +8,6 @@ class BakersController < ApplicationController
   end
 
   def new
-    @new_baker = Baker.new
   end
 
   def create
@@ -19,6 +18,10 @@ class BakersController < ApplicationController
       redirect_to new_baker_path
       flash[:alert] = "Error #{error_message(baker.errors)}"
     end
+  end
+
+  def edit
+    @baker = Baker.find(params[:id])
   end
 
 end
